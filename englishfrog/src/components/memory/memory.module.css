@@ -1,0 +1,109 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    max-width: fit-content;
+    margin: auto;
+
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.numberofsroks {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    /* border: 0.5px solid rgb(135, 145, 133); */
+    cursor: pointer;
+    /* background-color: rgb(254, 246, 196); */
+}
+
+
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all; */
+}
+
+.card .front,
+.card .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* backface-visibility: hidden; */
+
+
+}
+
+.card .front {
+    border: 0.5px solid rgb(153, 164, 151);
+    background: wheat;
+    /* transform: rotateY(180deg); */
+    /* display: flex; */
+    font-size: 20px;
+
+
+
+}
+
+.frontvisible {
+    z-index: 20;
+    transition: 0.3s ease all;
+}
+
+.fronthidden {
+    display: none;
+}
+
+.card .back {
+    background: rgb(202, 193, 115);
+    border: 0.5px solid rgb(104, 113, 102);
+    font-size: 50px;
+    transition: 0.3s ease all;
+    color: rgb(100, 126, 100);
+
+
+}
+
+.card .back:hover,
+.restart:hover {
+    background: rgb(245, 233, 179);
+    transform: scale(1.02);
+    transition: 0.3s ease all;
+
+}
+
+.restart {
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: wheat;
+    transition: 0.3s ease all;
+    color: rgb(99, 149, 99);
+    border: 0.5px solid rgb(104, 113, 102);
+    width: 100%;
+}
