@@ -1,12 +1,13 @@
 import React, { Component, useState } from 'react';
 import cn from 'classnames';
 import styles from './RowTable.module.css'
-function RowTable(props) {
-    const { word } = props
-    const [edit, setEdit] = useState(false)
+function RowTable({ word, editprops }) {
+    // const { word } = props
+
+    const [edit, setEdit] = useState(editprops)
     const handleWord = () => {
         setEdit(prevedit => !prevedit)
-        console.log(edit);
+
     }
 
     return (<>

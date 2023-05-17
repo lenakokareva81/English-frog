@@ -7,6 +7,7 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
+import cn from 'classnames';
 import SliderKart from './components/slider/sliderKart.jsx';
 import words from './components/json/json';
 import NoMatch from './components/NoMatch/NoMatch.jsx';
@@ -32,16 +33,20 @@ function App() {
           <div className={styles.logo}>
             <li>
               <img src={frogpng} className={styles.gif} />
-              <NavLink className={styles.link} to="/">Englishfrog</NavLink>
+              <NavLink className={({ isActive }) => isActive ? cn([styles.link, styles.active]) : styles.link} to="/">
+
+                {/* {cn([styles.front, (isFliped) ? styles.frontvisible : styles.fronthidden])}> */}
+
+                Englishfrog</NavLink>
             </li>
           </div>
           <li>
             <img src={deckpng} className={styles.gif} />
-            <NavLink className={styles.link} to="/table">таблица</NavLink>
+            <NavLink className={({ isActive }) => isActive ? cn([styles.link, styles.active]) : styles.link} to="/table">таблица</NavLink>
           </li>
           <li>
             <img src={cardspng} className={styles.gif} />
-            <NavLink className={styles.link} to="/users">учить</NavLink>
+            <NavLink className={({ isActive }) => isActive ? cn([styles.link, styles.active]) : styles.link} to="/users">учить</NavLink>
           </li>
           <li>
             <img src={gamepng} className={styles.gif} />
@@ -64,7 +69,7 @@ function App() {
 
       {/* <p><a target="_blank" href="https://icons8.com/icon/WQFGcVqV2UaR/стопка-бумаги">Стопка бумаги</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p> */}
 
-    </Router>
+    </Router >
 
   );
 }
