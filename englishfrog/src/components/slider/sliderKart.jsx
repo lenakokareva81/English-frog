@@ -6,10 +6,11 @@ import React,
 import cn from 'classnames';
 import styles from './slider_kart.module.css';
 import Karta from '../karta/karta';
-import words from '../json/json'
 
 
-function SliderKart() {
+
+function SliderKart(props) {
+    const { words } = props
     const long = words.length
     const [number, setNumber] = useState(0)
     function back() {
@@ -28,7 +29,9 @@ function SliderKart() {
             <div className={styles.back} onClick={back}>
                 <div className={cn([styles.arrow_back])}>
                 </div></div>
-            < Karta word={words[number]} />
+            <div className={styles.karta}> < Karta word={words[number]} />
+            </div>
+
             <div className={styles.forward} onClick={forward}>
                 <div className={cn([styles.arrow_forward])}></div>
             </div>

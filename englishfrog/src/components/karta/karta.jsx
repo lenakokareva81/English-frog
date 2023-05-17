@@ -24,17 +24,14 @@ class Karta extends Component {
         { console.log(styles) }
         return (
             <div className={styles.root}>
-                <p className={styles.h1}>{word.english}</p>
-                <p className={styles.h2}>{word.transcription}</p>
-                {body}
-                <button className={buttonClass} onClick={this.handleClick}>
-                    {this.state.isOpen ? "убрать перевод" : "перевод"}
-                </button>
-
-                {/* <button >
-                    перевод
-                </button> */}
-
+                <div className={styles.karta}>
+                    <p className={styles.h1}>{word.english}</p>
+                    <p className={styles.h2}>{word.transcription}</p>
+                    {body}
+                    <button className={buttonClass} onClick={this.handleClick}>
+                        {this.state.isOpen ? "убрать перевод" : "перевод"}
+                    </button>
+                </div>
             </div>
         );
     }

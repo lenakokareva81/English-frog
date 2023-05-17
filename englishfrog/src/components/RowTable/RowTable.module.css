@@ -1,0 +1,50 @@
+
+  .text{
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin: 0;
+    z-index: 12;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .button_no{
+    background-color: #ff8f80;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #336849;
+    cursor: pointer;
+  }
+  .button_edit{
+    background-color:#8ab7b2;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #336849;
+    cursor: pointer;
+  }
+  .table{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 50px 50px;
+    gap: 1px;
+    width:100%;
+    text-align: left;
+    border: 1px solid #bcc1bd;
+    padding: 5px;
+  }
+  .input{
+    font-size: 20px;
+  }

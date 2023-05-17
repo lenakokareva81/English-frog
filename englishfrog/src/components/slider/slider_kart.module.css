@@ -1,24 +1,27 @@
 .root {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 200px 1fr;
     
 }
 
 .back,
 .forward {
     /* align-items: center; */
-    display: flex;
+    display: grid;
 }
 
 
 .back {
     width: min-content;
     justify-self: end;
+    cursor: pointer;
 }
 
 .forward {
-    justify-self: start;
+    width: min-content;
+    justify-self:start;
+    cursor: pointer;
 }
 
 .arrow {
@@ -37,14 +40,19 @@
     display: flex;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-right: 20px solid #000000;
+    border-right: 20px solid  #2d4403;
 
 
 }
 
 .arrow_forward {
-    /* transform: rotate(45deg); */
+    
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 20px solid #2d4403;
+}
+.karta {
+    width: min-content;
+    text-align:center;
+    justify: center;
 }
