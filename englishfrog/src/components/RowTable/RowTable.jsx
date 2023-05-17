@@ -15,7 +15,7 @@ function RowTable(props) {
             {edit ? <input className={styles.input} type="text" autofocus placeholder={word.russian} /> : <p className={styles.text}>{word.russian}</p>}
             {edit ? <input className={styles.input} type="text" autofocus placeholder={word.english} /> : <p className={styles.text}>{word.english}</p>}
             {edit ? <input className={styles.input} type="text" autofocus placeholder={word.transcription} /> : <p className={styles.text}>{word.transcription}</p>}
-            <button className={styles.button_edit} onClick={handleWord}>&#9998;</button>gi
+            <button className={styles.button_edit} onClick={handleWord}>&#9998;</button>
             <button className={styles.button_no}>&#10006;</button>
 
 
