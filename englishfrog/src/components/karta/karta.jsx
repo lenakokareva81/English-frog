@@ -28,8 +28,11 @@ class Karta extends Component {
                     <p className={styles.h1}>{word.english}</p>
                     <p className={styles.h2}>{word.transcription}</p>
                     {body}
-                    <button className={buttonClass} onClick={this.handleClick}>
+                    <button className={styles.button} onClick={this.handleClick}>
                         {this.state.isOpen ? "убрать перевод" : "перевод"}
+                    </button>
+                    <button className={styles.button} onClick={this.handleClick}>
+                        знаю
                     </button>
                 </div>
             </div>

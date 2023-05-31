@@ -48,3 +48,7 @@
   .input{
     font-size: 20px;
   }
+  .inputError{
+    font-size: 20px;
+    border:1px solid #ff8f80;
+  }

@@ -8,11 +8,11 @@ import {
   NavLink
 } from "react-router-dom";
 import cn from 'classnames';
-import SliderKart from './components/slider/sliderKart.jsx';
+import SliderKart from './components/SliderKart/SliderKart.jsx';
 import words from './components/json/json';
 import NoMatch from './components/NoMatch/NoMatch.jsx';
 import IgraMemoJpg from './components/memory/memory.jsx'
-import Mainpage from './components/Mainpage/Mainpage'
+import Mainpage from './pages/Mainpage/Mainpage'
 import Table from './components/Table/Table'
 import styles from './App.module.css';
 import gamegif from './components/img/game.gif'
